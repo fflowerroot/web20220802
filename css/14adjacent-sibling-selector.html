@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 인접한 형제(직전 형제) 셀렉터 
+        셀렉터에서 +는 인접한 형제만*/
+        h1 + p{
+            color: blue;
+        }
+        .error+p{
+            border: 5px solid;
+        }
+        .note+p{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1.error+p>lorem^h1.note+p>lorem -->
+    <h1 class="error"></h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolores culpa. Voluptatibus cum quos placeat facilis cupiditate aperiam nostrum velit, quaerat pariatur similique quam eos distinctio? Incidunt dolores amet veritatis?
+    </p>
+    <h1 class="note"></h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, tempore? Asperiores, numquam omnis eveniet nostrum officiis excepturi cum voluptas velit rem accusantium nesciunt necessitatibus culpa repellat incidunt ex sit exercitationem.
+    </p>
+
+
+
+    ------------------
+    <!-- h1.error+p*2>lorem //// 여기서 +는 인접한게 아니라 그냥 형제..-->
+    <h1 class="error"></h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corporis ad eaque similique molestiae, earum sapiente illum commodi repudiandae esse rem perspiciatis, labore assumenda amet possimus dolorum incidunt neque omnis.
+    </p>
+    <p>
+        Necessitatibus id eligendi, ad nulla corporis, a nostrum deleniti autem minus quasi reprehenderit facere qui optio. Quia aspernatur quibusdam, soluta laboriosam quos, vitae, enim a laborum ipsam maiores earum excepturi!
+    </p>
+</body>
+</html>

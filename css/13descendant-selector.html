@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{
+            color: blue;
+        }
+        /* 직전 자손(자식) 선택자 > */
+        .error>p{
+            text-decoration: line-through;
+        }
+        /* 모든 자손선택자 스페이스*/
+        .error p{
+            border: 2px solid;
+        }
+        /*      .error는 엘리먼트.error    */
+    </style>
+</head>
+<body>
+    <!-- .note>error>p>lorem^^^.error>.note>p>lorem -->
+    <!-- ^는 한칸 위로 올라가라는 뜻 -->
+    <div class="note">
+        <div class="error">
+            <P>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi neque velit veritatis, hic accusantium itaque perspiciatis exercitationem pariatur debitis ducimus eaque esse sequi, vero mollitia maxime dolore eveniet ullam.
+            </P>
+        </div>
+    </div>
+    <div class="error">
+        <div class="note">
+            <P>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque obcaecati recusandae dolores magnam, eos quaerat incidunt illum deserunt nam iste, commodi in vel, rerum nulla laudantium eligendi quibusdam autem fuga!
+            </P>
+        </div>
+    </div>
+
+   
+
+
+</body>
+</html>
