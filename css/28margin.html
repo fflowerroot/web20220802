@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* margin은 다른 element와의 간격 */
+        h1{ border: solid;
+            margin: 10px 400px 100px 0px;
+        }
+        #head1{
+            margin: 19px;
+        }
+        #head2{
+            margin: 30px 10px 100px;
+        }
+        #head3 #head4 #head5 {   
+            margin: 0px 33px;
+        } 
+        /* 이거 왜 안됨? id는 한번에 여러개 선택 안됨? */
+
+
+        #head9{
+            width: 350px;
+            margin: auto;
+            text-align: center;
+            /* margin: auto는 엘리먼트를 가운데로 위치시킴 */
+            /* cf. 위 아래 마진은 겹쳐서 표현됨 */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head1">
+        Lorem, ipsum.
+    </h1>
+    <h1 id="head2">
+        Dignissimos, atque.
+    </h1>
+    <h1 id="head3">
+        Ratione, repellendus.
+    </h1>
+    <h1 id="head4">
+        Facere, eius!
+    </h1>
+    <h1 id="head5">
+        Libero, expedita?
+    </h1>
+    <h1 id="head6">
+        Error, et.
+    </h1>
+    <h1 id="head7">
+        Repudiandae, iure!
+    </h1>
+    <h1 id="head8">
+        Maiores, omnis!
+    </h1>
+    <h1 id="head9">
+        Dicta, veritatis!
+    </h1>
+    <h1 id="head10">
+        Nesciunt, deleniti!
+    </h1>
+    <h1 id="head11">
+        Ratione, quibusdam.
+    </h1>
+    <h1 id="head12">
+        Vitae, esse?
+    </h1>
+    <h1 id="head13">
+        Sunt, placeat.
+    </h1>
+    <h1 id="head14">
+        Voluptatum, nostrum?
+    </h1>
+    <h1 id="head15">
+        Asperiores, ut.
+    </h1>
+</body>
+</html>

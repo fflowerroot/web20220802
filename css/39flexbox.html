@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- flex박스라는게 한줄로 배열되는데도 마음대로 꾸밀 수 있는거야? -->
+    <!-- 각각이 다 '행'이고 행에 여러박스가 있는 경우(그러니까 가로축을 여러개로 나누고 싶으면)에는 flex로 만들면 됨 -->
+
+    <!-- 파일은 드래그엔 드롭으로 vscode 파일로 옮길 수 있음 -->
+    <!-- 폰트 사이트 (일부만 무료): fontawesome  -->
+    <style>
+        .container{
+            display: flex;
+        }
+        .main1{
+            text-align: center;
+        }
+        .main2{
+            background-color: gray;
+            text-align: center;
+            padding: 20px;
+            /* border-color: gray; */
+            border: solid 3px rgb(8, 9, 9);
+            border-radius: 30px;
+        }
+        .main2>div{
+            background-color: aliceblue;
+            padding: 20px;
+            border-left: green;
+            /* 보더색 안넣어지네? 보더가 아니라서 그런가? */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main1" style="flex:1">
+            <!-- flex grow? 를 그냥 flex로 쓰는거라고? -->
+            <h1>HTML</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, sint.
+            </p>
+            <p>
+                Nulla beatae debitis reiciendis adipisci qui error repellat maiores quo!
+            </p>
+            <p>
+                Recusandae dolorum sapiente facilis sed at ex maiores, quibusdam et?
+            </p>
+            <p>
+                Temporibus velit eligendi iste. Facilis voluptatem quidem cupiditate iure quasi!
+            </p>
+        </div>
+        <div class="main2" style="flex:1">
+            <h3>HTML Example:</h3>
+            <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <p>
+                Beatae nesciunt magni officia laborum consequatur?
+            </p>
+            <p>
+                Libero laborum optio consectetur ex voluptatibus.
+            </p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

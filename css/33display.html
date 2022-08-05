@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1:nth-child(odd), a:nth-child(odd){
+            background-color: gold;
+        
+        }
+        
+        h1:nth-child(even),a:nth-child(even){
+            background-color: aqua;
+        }
+
+        h1{
+            display: inline;
+        }
+        /* h 요소는 display 설정을 하지 않으면 기본설정인 block으로 설정됨    
+           a 요소는 설정하지 않으면 기본이 inline*/
+        a{
+            display: block;
+        }
+        /* https://css-tricks.com/ */
+    </style>
+</head>
+<body>
+    <h1>
+        Lorem, ipsum.
+    </h1>
+    <h1>
+        Quia, reiciendis!
+    </h1>
+    <h1>
+        Molestiae, ipsa.
+    </h1>
+    <hr>
+    <a href="">
+        Lorem, ipsum.
+    </a>
+    <a href="">
+        Autem, nulla!
+    </a>
+    <a href="">
+        Atque, iure.
+    </a>
+</body>
+</html>
