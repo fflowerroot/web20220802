@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    .row{
+        display:flex;
+    }
+
+    /* https://css-tricks.com/guides/ */
+    
+    /* media query(mq) */
+
+    @media(max-width:300px){}
+        .row{
+            display: block;
+        }
+    
+    .col{
+        font-size: 48px;
+        font-weight: bold;
+        height: 200px;
+        flex:1;
+    }
+    .col:nth-child(odd){
+        background-color: gold;
+    }
+    .col:nth-child(even){
+        background-color: brown;
+    }
+</style>
+</head>
+<body>
+    <div class="row">
+        <col>1</col>
+        <col>2</col>
+        <col>3</col>
+        <col>4</col>
+    </div>
+</body>
+</html>
