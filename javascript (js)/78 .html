@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script>
+
+        //  함수가 값이니까 parameter에 넣을 수 있다
+
+        function printDouble(a) {
+            console.log(a() + a());
+        } 
+
+
+       
+        printDouble(function () {
+            return "hello";
+        });   /*  함수의 parameter 안에 함수를 정의했어?? 
+                    우리가 보통 함수 이름에 함수를 저장해서 '함수이름()'으로 호출해
+                    그런데 변수에 함수를 저장해서 '변수이름()'으로 호출할 수도 있어
+                    (변수에 '함수이름'을 저장하는 것도 같은 역할인데, 그러려면 함수이름으로 함수가 정의되어 있어야해)
+                    그래서 parameter에 함수를 저장하는것도 parameter(매개변수)라는 변수에 함수를 저장하는거니까 가능한거야
+                  cf. 주의! 'function 함수이름(){구현부}'로 저장해야할 것 같지만.... 이런식으로는 변수에 저장이 안돼.   */
+
+
+        printDouble(3) /* 이렇게 parameter에 숫자를 넣으면 f is not a function'이라는 에러가 난다
+                        함수의 구현부에 'parameter()'라는 코드가 있기 때문인 것 같다. */
+
+
+        
+
+
+    </script>
+</body>
+
+</html>

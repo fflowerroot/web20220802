@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+    
+    let a = ["java", "spring", "jsp", "css", "html"]
+
+    let b = [];
+    
+    for( i = 0 ; i < a.length; i++ ){
+        b.push(a[i])
+    }
+
+    console.log("복사된 배열 b " , b);
+
+
+    let c = [2, 2, 3, 5, 12, 4, 5, 5, 6, 9, 12];
+    let d = []; 
+
+    for( i = 0; i < c.length; i++ ){     // for문으로 전체 탐색
+        if( c[i] % 3 == 0 ){             // if문으로 걸러냄
+            d.push(c[i]);
+        }
+    }
+    console.log("배열c에서 3의 배수만 복사한 배열d " , d);
+
+    let e = [2, 3, 4, 1, 6, 4];
+    let f = ["java", "spring", "html", 'css'];
+
+    let g = [];
+
+    for(i = 0; i < e.length; i++){
+        g.push(e[i]);
+    }
+    for(i = 0; i < f.length; i++){
+        g.push(f[i]);
+    }
+    console.log("배열e와 f를 복사  ", g);
+
+    
+    
+    let h = [];
+  
+
+    for(i =0; i < e.length ; i++){
+        h.push(e[i])
+        // if(h[i]=true){.....
+        h.push(f[i])
+    }    
+    console.log("e와f의 값을 교차해서 복사 " , h);
+    //값이 있을 때만 push하고 싶으면 어떻게 해야돼?
+
+
+   
+
+    </script>
+</body>
+</html>
