@@ -13,7 +13,7 @@
     
 
     function sum(num) {
-        sum = 0
+        let sum = 0    //sum = 0      // let을 쓰는거랑 안쓰는거랑 무슨차이지? 아래 함수는 let안써도 함수이름이랑 sum변수랑 달라서 괜찮았던건가?
         for(i = 1; i <= num; i++){
             sum += i ;
         }
@@ -21,8 +21,14 @@
     }
 
     console.log(sum(10));
-    console.log(sum(10)); // sum is not a function  ??? 위 코드는 실행도는데..?
+    console.log(sum(10)); // 변수 sum에 let을 안썼을 때 오류남. sum is not a function  ??? 위 코드는 실행도는데..?
 
+    
+    
+    
+    
+    
+    
     
 
     // let res = sum(10) + sum(100)
