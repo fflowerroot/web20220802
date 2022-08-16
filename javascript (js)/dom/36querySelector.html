@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        click
+        <h1>
+            Lorem.
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusantium repellat cum. Ratione qui eligendi perferendis amet! Voluptate architecto voluptatibus, laudantium quos excepturi, ab rem sunt quae minima magni nostrum?
+        </p>
+        <h1>
+            Fugit.
+        </h1>
+        <p>
+            Ducimus provident eligendi illum necessitatibus minima saepe nam. Culpa, quisquam eos? Non debitis possimus ut ab omnis delectus veritatis natus veniam obcaecati ipsum quos, corrupti officiis, temporibus aliquid, porro harum?
+        </p>
+    </div>
+    <div>
+        click
+        <h1>
+            Lorem.
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dolor eveniet! Error, culpa? Alias consequatur fugiat ratione quod libero mollitia vero, architecto possimus minima dolorem sed. Quis laboriosam libero neque.
+        </p>
+        <h1>
+            Enim!
+        </h1>
+        <p>
+            Quo aut incidunt molestias ducimus inventore, atque molestiae deserunt nobis consequuntur corporis aspernatur adipisci laudantium deleniti neque quaerat doloremque mollitia dolore sint ex voluptatum commodi. Culpa voluptas vitae possimus ut.
+        </p>
+    </div>
+    <div>
+        click
+        <h1>
+            Lorem.
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fugit iure facilis eaque quo non qui rem soluta est ipsam! Harum fugiat quidem, nulla nemo mollitia modi. Libero, labore numquam.
+        </p>
+        <h1>
+            Fuga?
+        </h1>
+        <p>
+            Natus rem soluta unde, deserunt ipsum itaque animi non similique id aut sunt incidunt harum voluptatum doloribus est pariatur provident. Nobis dolorum perferendis corrupti placeat debitis sed neque soluta velit.
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+
+    let clicks = document.querySelectorAll("div");
+    for (let i = 0; i < clicks.length; i++){
+        //let clicks = document.querySelectorAll("div");
+        clicks[i].addEventListener("click", function () {
+            this.querySelectorAll.children.classList.toggle("d-none")
+        })
+    }   
+    
+   // this.previousElementSibling.classList.toggle("d-none")
+
+   /* 제이쿼리는 js를 간결하게 쓸 수 있는 라이브러리
+        제이쿼리는 시간이 남으면 한대 */
+    </script>
+</body>
+</html>

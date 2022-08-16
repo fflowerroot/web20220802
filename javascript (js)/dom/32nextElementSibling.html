@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <h2>
+        Lorem.
+    </h2>
+    <h3>
+        Lorem.
+    </h3>
+
+    <hr>
+
+    <h1>
+        Lorem.
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis! Necessitatibus error veritatis id? Ex consequuntur molestias aut sunt possimus explicabo quas iusto quae delectus voluptatibus. Ad, corporis. Adipisci, nemo?
+    </p>
+    <h1>
+        Mollitia.
+    </h1>
+    <p>
+        Hic quas provident consequuntur eos. Natus, animi magni. Necessitatibus quas ratione, eius nam corporis at totam delectus enim ex quod voluptate facere cum dicta odio earum, obcaecati tempore quidem rerum.
+    </p>
+    <h1>
+        Ipsa.
+    </h1>
+    <p>
+        At dolore quae, veritatis corporis, facilis non possimus cupiditate, accusantium impedit id officiis quas sit commodi fugiat voluptate eum eligendi. Obcaecati quibusdam, illum ullam consequuntur recusandae vitae molestiae magni quisquam.
+    </p>
+    <h1>
+        Soluta.
+    </h1>
+    <p>
+        Debitis, numquam libero ipsa excepturi nesciunt harum modi perferendis saepe, minus accusamus architecto magni, iusto totam placeat. Officia, error asperiores placeat esse accusamus vero optio et ducimus, quidem a distinctio.
+    </p>
+    <h1>
+        Possimus.
+    </h1>
+    <p>
+        Impedit doloremque quae laborum dignissimos sunt accusamus distinctio eaque, iusto, quidem pariatur ipsam dolores. Delectus impedit, voluptas a hic distinctio facere mollitia, blanditiis quo, id dolorum iusto fugit animi porro.
+    </p>
+    <h1>
+        Nesciunt?
+    </h1>
+    <p>
+        Laudantium vel incidunt laborum deserunt. Eum ducimus repudiandae, a maiores amet placeat officia eveniet minima, in, nisi qui aspernatur eligendi quasi esse? Soluta, porro! Tempora cupiditate accusamus facere vel ullam!
+    </p>
+    <h1>
+        Iste!
+    </h1>
+    <p>
+        Modi aperiam pariatur voluptas vero reprehenderit harum dolore quas fugit blanditiis dignissimos dolorem atque rem nemo, soluta facilis totam error. Aliquid atque qui libero perferendis nemo iure quam totam quidem.
+    </p>
+    <h1>
+        Nulla.
+    </h1>
+    <p>
+        Recusandae, dignissimos ratione consequatur temporibus numquam necessitatibus porro incidunt rem minus, dolorem cumque labore, iste vero! Dicta tempore quaerat fugiat dolor dolores saepe, iure cumque, cum quas itaque laudantium velit.
+    </p>
+    <h1>
+        Quia?
+    </h1>
+    <p>
+        Earum tempora quo expedita non, voluptatibus libero debitis minima est exercitationem a sunt excepturi mollitia corporis dignissimos voluptatum dolor nam inventore unde officiis iure molestiae consequuntur aliquam. Quaerat, omnis et!
+    </p>
+    <h1>
+        Qui?
+    </h1>
+    <p>
+        Ducimus pariatur libero corporis! Explicabo nemo natus laborum unde non odit quia mollitia iusto in numquam dolorem debitis asperiores cupiditate eligendi consequatur amet maxime beatae et illum ratione, excepturi atque.
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+
+    document.querySelector("h2").addEventListener("click", function() {
+        document.querySelector("h3").classList.toggle("d-none");
+    });
+
+
+    let h1Arr = document.querySelectorAll("h1");
+    
+    for(i = 0; i < h1Arr.length; i++){
+        h1Arr[i].addEventListener("click", function() {
+         //   h1Arr[i].nextElementSibling.classList.toggle("d-none"); 
+         // Uncaught TypeError: Cannot read properties of undefined (reading 'nextElementSibling')
+         // at HTMLHeadingElement.<anonymous>
+            this.nextElementSibling.classList.toggle("d-none"); })
+    };
+    
+
+/* nextElementSibling
+   previousElementSibling */ 
+
+
+
+    </script>
+</body>
+</html>
+
